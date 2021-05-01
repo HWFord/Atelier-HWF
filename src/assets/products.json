@@ -1,0 +1,393 @@
+[
+  {
+    "id":1,
+    "title":"Events",
+    "img":"event.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Weddings",
+        "img":"event_wedding.jpg",
+        "products": [
+          {
+            "id":1,
+            "name":"Printed Grooms vows",
+            "description":"Grooms vows printed on glass",
+            "price":75,
+            "img":"wedding2.jpg",
+            "materials":[
+              "Glass",
+              "Vinyl"
+            ],
+            "quantity":"10",
+            "tags":[
+              "vows",
+              "groom"
+            ],
+            "reference":"ev_wed_glass_print_groom",
+            "countryOfOrigin":"France",
+            "personnalisable":true,
+            "color":[
+              "transparent",
+              "white",
+              "black"
+            ],
+            "dimensions":[
+              {
+                "height":60,
+                "width":60,
+                "depth":1
+              }
+            ],
+            "weight":200
+          },
+          {
+            "id":2,
+            "name":"Die cut table decoration",
+            "price":5,
+            "img":"wedding1.jpg"
+          },
+          {
+            "id":3,
+            "name":"Bridesmaids hangers",
+            "price":10,
+            "img":"wedding3.jpg"
+          },
+          {
+            "id":4,
+            "name":"Ceremony direction sign",
+            "price":50,
+            "img":"wedding4.jpg"
+          },
+          {
+            "id":5,
+            "name":"Wedding party chalk board",
+            "price":45,
+            "img":"wedding5.jpg"
+          },
+          {
+            "id":6,
+            "name":"In sickness + in health party favors",
+            "price":8,
+            "img":"wedding6.jpg"
+          },
+          {
+            "id":7,
+            "name":"Mr & Mrs Cake topper",
+            "price":10,
+            "img":"wedding7.jpg"
+          },
+          {
+            "id":8,
+            "name":"Surname crate decoration",
+            "price":25,
+            "img":"wedding8.jpg"
+          },
+          {
+            "id":9,
+            "name":"Bottle opener party favor",
+            "price":15,
+            "img":"wedding10.jpg"
+          },
+          {
+            "id":10,
+            "name":"Die cut plate decoration",
+            "price":5,
+            "img":"wedding9.jpg"
+          }
+        ]
+      },
+      {
+        "id":2,
+        "title":"Birthdays",
+        "img":"event_birthday.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"birthday1.jpg",
+            "name":"Happy birthday card"
+          }
+        ]
+      },
+      {
+        "id":3,
+        "title":"Christmas",
+        "img":"event_christmas.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"christmas1.jpg",
+            "name":"Named Bauballes"
+          }
+        ]
+      },
+      {
+        "id":4,
+        "title":"Easter",
+        "img":"event_easter.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"easter1.jpg",
+            "name":"Named bunny tote bags"
+          }
+        ]
+      },
+      {
+        "id":5,
+        "title":"Mother's & Father's day",
+        "img":"event_mothersday.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"motherDay1.jpg",
+            "name":"Best mum ever mug"
+          }
+        ]
+      },
+      {
+        "id":6,
+        "title":"New Year",
+        "img":"event_newyear.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"newYear1.jpg",
+            "name":"Happy new year garland"
+          }
+        ]
+      },
+      {
+        "id":7,
+        "title":"Summer",
+        "img":"event_summer.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"summer1.jpg",
+            "name":"Family pool towels"
+          }
+        ]
+      },
+      {
+        "id":8,
+        "title":"Spring",
+        "img":"event_spring.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"spring1.jpg",
+            "name":"Hello spring decoration"
+          }
+        ]
+      },
+      {
+        "id":9,
+        "title":"St patrick's",
+        "img":"event_stpatrick.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"stPatrick1.jpg",
+            "name":"Happy st Patrick's day card"
+          }
+        ]
+      },
+      {
+        "id":10,
+        "title":"Valentines",
+        "img":"event_valentines.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"valentine1.jpg",
+            "name":"Hot stuff twin mugs"
+          }
+        ]
+      },
+      {
+        "id":11,
+        "title":"Halloween",
+        "img":"event_halloween.jpg",
+        "products":[
+          {
+            "id":1,
+            "img":"halloween1.jpg",
+            "name":"Hey Boo cushion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":2,
+    "title":"Stationnary",
+    "img":"stationnary.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Stickers",
+        "img":"stickers.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"stickers1.jpg",
+            "name":"Foiled sticker sheet"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":3,
+    "title":"Kitchen",
+    "img":"kitchen.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Glasses",
+        "img":"glasses.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"glass1.jpg",
+            "name":"Bad and bozy tumbler"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":4,
+    "title":"Adult fashion",
+    "img":"adultFashion.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"T-shirts",
+        "img":"t-shirt.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"t-shirt1.jpg",
+            "name":"Coffee, chaos and cuss words printed t-shirt"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":5,
+    "title":"Exterior decoration",
+    "img":"garden.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Flower pots",
+        "img":"flowerPots.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"flowerPots1.jpg",
+            "name":"Aloe little friend pot"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":6,
+    "title":"Animals",
+    "img":"animals.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Tags",
+        "img":"tags.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"dogTag1.jpg",
+            "name":"I escaped tag"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":7,
+    "title":"Wall decoration",
+    "img":"wallDeco.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Frames",
+        "img":"frames.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"frame1.jpg",
+            "name":"Home frame with succulent"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":8,
+    "title":"Children",
+    "img":"children.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Baby grow",
+        "img":"babyGrows.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"babyGrow1.jpg",
+            "name":"Mummies little princess"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":9,
+    "title":"Interior decoration",
+    "img":"interior.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"Cushions",
+        "img":"cushions.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"cushion1.jpg",
+            "name":"Reserved for Grandad cushion"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id":10,
+    "title":"Crafting",
+    "img":"svg.jpg",
+    "subcategories": [
+      {
+        "id":1,
+        "title":"SVGs",
+        "img":"svg.jpg",
+        "products": [
+          {
+            "id":1,
+            "img":"svg1.jpg",
+            "name":"Flower name SVG"
+          }
+        ]
+      }
+    ]
+  }
+]
