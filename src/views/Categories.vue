@@ -6,7 +6,7 @@
             :key="data.id" 
             class="col-3">
                 <div class="card mx-1 my-3">
-                    <Category v-bind:category="data"/>
+                    <Subcategory v-bind:categoryData="data"/>
                 </div>
             </div>
         </div>
@@ -16,12 +16,12 @@
 <script>
 
 import datas from '@/assets/products.json'
-import Category from '@/components/Category.vue'
+import Subcategory from '@/components/Subcategory.vue'
 
 export default {
   name: 'Categories',
   components: {
-    Category
+    Subcategory
   },
   data() {
         return {

@@ -51,12 +51,8 @@ export default {
   },
   created() {
     const categoryDisplayed = this.$route.params.categoryName;
-    //console.log(categoryDisplayed);
     this.category = datas.find((d) => d.title === categoryDisplayed);
     this.subcategories = this.category.subcategories;
-    //console.log(datas[0]);
-    //console.log(this.category);
-    //console.log(this.subcategories);
   }
 };
 </script>
