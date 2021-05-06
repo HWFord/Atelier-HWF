@@ -1,48 +1,46 @@
 <template>
   <div id="SubCategoryList" class="">
-    <ul class="list-group list-group-flush ">
-      <router-link 
-      v-for="subcategory in subcategoryData"
-      :key="subcategory.id"
-      :to="{
-        name: 'Productlist', 
-        params: {
-        categoryName:categoryData.title,
-        subCategoryName:subcategory.title
-        } 
-      }"
-      class="list-group-item"
-      >
-      {{ subcategory.title }}
-      </router-link>
+    <ul class="list-group list-group-flush">
+      <li v-for="subcategory in subCategoriesData" :key="subcategory.ID">
+        <router-link
+          class="list-group-item"
+          :to="{
+            name: 'Productlist',
+            params: { categoryID: subcategory.ID_1 },
+            params: { subcategoryID: subcategory.ID },
+          }"
+        >
+          {{ subcategory.name }}
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>
 <script>
-
-
 export default {
   props: {
-    categoryData:{
-      type:Object,
-      required:true
+    subCategoriesData: {
+      type: Array,
+      required: true,
     },
-    subcategoryData:{
-      type:Array,
-      required:true
-    }
   },
-}
+  mounted() {
+    console.log(this.subCategoriesData);
+  },
+};
 </script>
 <style scoped>
-#SubCategoryList{
-  top:0;
+#SubCategoryList {
+  top: 0;
   overflow: auto;
-  max-height:60%;
+  max-height: 60%;
 }
-@media screen and (max-width: 575px){
-   #SubCategoryList{
-      display:none;
-    }
- }
+.list-group-item {
+  border: 0px;
+}
+@media screen and (max-width: 575px) {
+  #SubCategoryList {
+    display: none;
+  }
+}
 </style>

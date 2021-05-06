@@ -1,25 +1,24 @@
 <template>
   <div class="main">
-    <Nav/>
-      <div class="content">
-        <router-view/>
-      </div>
+    <Nav />
+    <div class="content">
+      <router-view />
+    </div>
   </div>
 </template>
 
 <script>
-
-import Nav from '@/components/Nav.vue'
+import Nav from "@/components/Nav.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
-    Nav
-  }
-}
+    Nav,
+  },
+};
 </script>
 <style scoped>
-.content{
-  margin-top:115px;
+.content {
+  margin-top: 115px;
 }
 </style>

@@ -1,55 +1,57 @@
 <template>
-    <div>
-      <div class="card-body py-5"
-      v-bind:style="{ 
-        'background-image': image , 
+  <div>
+    <div
+      class="card-body py-5"
+      v-bind:style="{
+        'background-image': image,
+      }"
+    >
+      <router-link
+        v-if="subcategoryData"
+        :to="{
+          name: 'Productlist',
+          params: {
+            subcategoryID: subcategoryData.ID,
+          },
         }"
       >
-          <router-link v-if="subcategoryData" :to="{
-             name: 'Productlist', 
-             params: {
-               categoryName:categoryData.title,
-               subCategoryName:subcategoryData.title
-               } 
-            }"
-          >
-            <div class="centerMiddle categoryLink">
-            {{ subcategoryData.title }}
-            </div>
-          </router-link>
+        <div class="centerMiddle categoryLink">
+          {{ subcategoryData.name }}
+        </div>
+      </router-link>
 
-          <router-link v-else :to="{
-             name: 'Subcategories', 
-             params: {categoryName:categoryData.title} 
-            }"      
-          >
-            <div class="centerMiddle categoryLink">
-            {{ categoryData.title }}
-            </div>
-          </router-link>
-
-      </div>
+      <router-link
+        v-else
+        :to="{
+          name: 'Subcategories',
+          params: { categoryID: categoryData.ID },
+        }"
+      >
+        <div class="centerMiddle categoryLink">
+          {{ categoryData.name }}
+        </div>
+      </router-link>
     </div>
+  </div>
 </template>
 <script>
-
 export default {
-  data(){
-    return{
-          image:''
-    }
+  data() {
+    return {
+      image: "",
+    };
   },
   props: {
-    categoryData:{
-      type:Object,
-      required:true
+    categoryData: {
+      type: Object,
+      required: true,
     },
-    subcategoryData:{
-      type:Object,
-      required:false
-    }
+    subcategoryData: {
+      type: Object,
+      required: false,
+    },
   },
-  routes: [
+  /*routes: [
     {
       path:'/Subcategories',
       name: 'Subcategories',
@@ -62,30 +64,32 @@ export default {
       props: true,
       component:'ProductList'
      }
-  ],
-  created(){
+  ],*/
+  created() {
     this.setImage();
   },
-  methods:{
-    setImage(){
-      if(this.subcategoryData==null){
-        this.image= 'url(' + require(`@/assets/img/categories/${this.categoryData.img}`) + ')'
-
-      }else{
-        this.image= 'url(' + require(`@/assets/img/subcategories/${this.subcategoryData.img}`) + ')'
-      } 
-    }
-  }
-
-}
+  methods: {
+    setImage() {
+      if (this.subcategoryData == null) {
+        this.image =
+          "url(" +
+          require(`@/assets/img/categories/${this.categoryData.img}`) +
+          ")";
+      } else {
+        this.image =
+          "url(" +
+          require(`@/assets/img/subcategories/${this.subcategoryData.img}`) +
+          ")";
+      }
+    },
+  },
+};
 </script>
 <style scoped>
-
-.card-body{
+.card-body {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 250px;
 }
-
 </style>

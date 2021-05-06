@@ -13,8 +13,8 @@ const routes = [
   },
   {
     path: '/',
-    component:Main,
-    children:[
+    component: Main,
+    children: [
       {
         path: '/about',
         name: 'About',
@@ -26,28 +26,33 @@ const routes = [
         component: () => import(/* webpackChunkName: "basket" */ '../views/Basket.vue')
       },
       {
+        path: '/account',
+        name: 'Account',
+        component: () => import(/* webpackChunkName: "basket" */ '../views/Account.vue')
+      },
+      {
         path: '/categories',
         name: 'Categories',
         component: () => import(/* webpackChunkName: "categories" */ '../views/Categories.vue')
       },
       {
-        path: '/:categoryName',
+        path: '/category/:categoryID/subcategories',
         name: 'Subcategories',
         component: () => import(/* webpackChunkName: "subcategories" */ '../views/Subcategories.vue')
       },
       {
-        path: '/:categoryName/:subCategoryName',
+        path: '/category/:categoryID/subcategory/:subcategoryID/products',
         name: 'Productlist',
         component: () => import(/* webpackChunkName: "productlist" */ '../views/Productlist.vue')
       },
       {
-        path: '/:categoryName/:subCategoryName/:productId',
+        path: '/category/:categoryID/subcategory/:subcategoryID/product/:productID',
         name: 'Product',
         component: () => import(/* webpackChunkName: "product" */ '../views/Product.vue')
       }
-    ] 
+    ]
   }
-  
+
 ]
 
 const router = new VueRouter({
